@@ -26,89 +26,89 @@
       "id": 1,
       "p1": "shane",
       "p2": "colby",
-      "score1": 32,
-      "score2": 2
+      "score1": null,
+      "score2": null
     },
     {
       "id": 2,
       "p1": "shane",
       "p2": "devin",
-      "score1": 2,
-      "score2": 3
+      "score1": null,
+      "score2": null
     },
     {
       "id": 3,
       "p1": "shane",
       "p2": "brendon",
-      "score1": 11,
-      "score2": 10
+      "score1": null,
+      "score2": null
     },
     {
       "id": 4,
       "p1": "shane",
       "p2": "chuck",
-      "score1": 12,
-      "score2": 0
+      "score1": null,
+      "score2": null
     },
     {
       "id": 5,
       "p1": "colby",
       "p2": "devin",
-      "score1": 12,
-      "score2": 1
+      "score1": null,
+      "score2": null
     },
     {
       "id": 6,
       "p1": "colby",
       "p2": "brendon",
-      "score1": 12,
-      "score2": 2
+      "score1": null,
+      "score2": null
     },
     {
       "id": 7,
       "p1": "colby",
       "p2": "chuck",
-      "score1": 32,
-      "score2": 1
+      "score1": null,
+      "score2": null
     },
     {
       "id": 8,
       "p1": "devin",
       "p2": "brendon",
-      "score1": 123,
-      "score2": 2
+      "score1": null,
+      "score2": null
     },
     {
       "id": 9,
       "p1": "devin",
       "p2": "chuck",
-      "score1": 2,
-      "score2": 3
+      "score1": null,
+      "score2": null
     },
     {
       "id": 10,
       "p1": "brendon",
       "p2": "chuck",
-      "score1": 2,
-      "score2": 1
+      "score1": null,
+      "score2": null
     }
   ],
   "knockout": {
     "playIn": {
-      "score1": 11,
-      "score2": 4
+      "score1": null,
+      "score2": null
     },
     "semiB": {
-      "score1": 1,
-      "score2": 0
+      "score1": null,
+      "score2": null
     },
     "semiA": {
-      "score1": 2,
-      "score2": 0
+      "score1": null,
+      "score2": null
     },
     "final": {
-      "score1": 2,
-      "score2": 1
+      "score1": null,
+      "score2": null
     }
   }
 }
