@@ -208,9 +208,11 @@ main { max-width: 980px; margin: 0 auto; padding: 40px 20px 100px; }
   font-size: 18px;
   background: var(--cream-dim);
   border-radius: 5px;
-  padding: 4px 8px;
-  min-width: 44px;
+  padding: 4px 0;
+  width: 40px;
+  box-sizing: border-box;
   text-align: center;
+  display: inline-block;
 }
 .fixture-score.editable {
   background: var(--rod-black);
