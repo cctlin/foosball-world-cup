@@ -232,14 +232,6 @@ function renderAll() {
   renderStandings();
   renderFixtures();
   renderBracket();
-  renderHeroLabels();
-}
-
-function renderHeroLabels() {
-  draft.players.forEach((p, i) => {
-    const el = document.querySelector(`#rod-${i + 1} .rod-label`);
-    if (el) el.textContent = p.name.toUpperCase();
-  });
 }
 
 // ---------- Edit mode: round robin score listeners ----------

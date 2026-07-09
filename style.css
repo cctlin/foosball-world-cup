@@ -94,7 +94,7 @@ a { color: inherit; }
 /* ---------- Hero ---------- */
 .hero {
   background: radial-gradient(ellipse at top, var(--pitch) 0%, var(--pitch-dark) 100%);
-  padding: 48px 24px 36px;
+  padding: 44px 24px 40px;
   text-align: center;
   color: var(--cream);
   overflow: hidden;
@@ -113,11 +113,6 @@ a { color: inherit; }
   opacity: 0.85;
   margin-top: 8px;
 }
-.table-wrap {
-  max-width: 760px;
-  margin: 32px auto 0;
-}
-.table-wrap svg { width: 100%; height: auto; display: block; }
 
 /* ---------- Sections ---------- */
 main { max-width: 980px; margin: 0 auto; padding: 40px 20px 100px; }
@@ -213,8 +208,8 @@ main { max-width: 980px; margin: 0 auto; padding: 40px 20px 100px; }
   font-size: 18px;
   background: var(--cream-dim);
   border-radius: 5px;
-  padding: 2px 9px;
-  min-width: 30px;
+  padding: 4px 8px;
+  min-width: 44px;
   text-align: center;
 }
 .fixture-score.editable {
@@ -223,7 +218,7 @@ main { max-width: 980px; margin: 0 auto; padding: 40px 20px 100px; }
   cursor: text;
 }
 .fixture-score input {
-  width: 34px;
+  width: 100%;
   text-align: center;
   border: none;
   background: transparent;
@@ -245,25 +240,26 @@ main { max-width: 980px; margin: 0 auto; padding: 40px 20px 100px; }
 /* ---------- Bracket ---------- */
 .bracket {
   display: flex;
-  gap: 34px;
-  overflow-x: auto;
+  gap: 16px;
   padding: 20px 4px 12px;
 }
 .bracket-col {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 28px;
-  min-width: 230px;
+  gap: 22px;
+  flex: 1;
+  min-width: 0;
 }
 .bracket-col-label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--pitch);
   text-align: center;
   margin-bottom: 4px;
+  white-space: nowrap;
 }
 .bmatch {
   background: var(--rod-black);
@@ -274,9 +270,9 @@ main { max-width: 980px; margin: 0 auto; padding: 40px 20px 100px; }
 .bmatch::before {
   content: '';
   position: absolute;
-  right: -18px;
+  right: -16px;
   top: 50%;
-  width: 18px;
+  width: 16px;
   height: 2px;
   background: var(--chrome);
 }
@@ -285,21 +281,31 @@ main { max-width: 980px; margin: 0 auto; padding: 40px 20px 100px; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 9px 12px;
+  gap: 6px;
+  padding: 8px 9px;
   color: var(--cream);
 }
 .brow + .brow { border-top: 1px solid rgba(255,255,255,0.1); }
-.brow .pname { font-size: 14px; font-weight: 600; }
+.brow .pname {
+  font-size: 12.5px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .brow.winner .pname { color: var(--goal-yellow); }
 .brow .score {
   font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
+  flex-shrink: 0;
+  min-width: 20px;
+  text-align: center;
 }
 .brow .score.editable {
   color: var(--goal-yellow);
 }
 .brow .score input {
-  width: 26px;
+  width: 30px;
   text-align: center;
   border: none;
   background: rgba(255,255,255,0.08);
@@ -307,29 +313,32 @@ main { max-width: 980px; margin: 0 auto; padding: 40px 20px 100px; }
   color: var(--goal-yellow);
   font-family: inherit;
   font-weight: 700;
+  padding: 2px 0;
 }
 .brow .score input:focus { outline: none; }
-.brow .placeholder { color: #8b9199; font-style: italic; font-size: 13px; }
+.brow .placeholder { color: #8b9199; font-style: italic; font-size: 11.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .champion-card {
   background: var(--goal-yellow);
   border-radius: var(--radius);
-  padding: 18px;
+  padding: 12px 8px;
   text-align: center;
-  min-width: 200px;
 }
 .champion-card .label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-size: 9px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   color: var(--rod-black);
   opacity: 0.7;
 }
 .champion-card .cname {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   color: var(--rod-black);
   margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* ---------- Save bar ---------- */
@@ -434,6 +443,6 @@ footer {
 @media (max-width: 640px) {
   .topbar { padding: 14px 16px; flex-wrap: wrap; gap: 10px; }
   .topbar nav button { font-size: 12px; padding: 7px 10px; }
-  .bracket { gap: 22px; }
-  .bracket-col { min-width: 200px; }
+  .bracket { gap: 10px; overflow-x: auto; }
+  .bracket-col { min-width: 130px; }
 }
