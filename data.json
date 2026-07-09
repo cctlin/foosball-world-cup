@@ -95,20 +95,20 @@
   ],
   "knockout": {
     "playIn": {
-      "score1": null,
-      "score2": null
+      "score1": 2,
+      "score2": 4
     },
     "semiB": {
-      "score1": null,
-      "score2": null
+      "score1": 1,
+      "score2": 0
     },
     "semiA": {
-      "score1": null,
-      "score2": null
+      "score1": 2,
+      "score2": 0
     },
     "final": {
-      "score1": null,
-      "score2": null
+      "score1": 2,
+      "score2": 1
     }
   }
 }
