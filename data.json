@@ -33,64 +33,64 @@
       "id": 2,
       "p1": "shane",
       "p2": "devin",
-      "score1": null,
-      "score2": null
+      "score1": 2,
+      "score2": 3
     },
     {
       "id": 3,
       "p1": "shane",
       "p2": "brendon",
-      "score1": null,
-      "score2": null
+      "score1": 11,
+      "score2": 10
     },
     {
       "id": 4,
       "p1": "shane",
       "p2": "chuck",
-      "score1": null,
-      "score2": null
+      "score1": 12,
+      "score2": 0
     },
     {
       "id": 5,
       "p1": "colby",
       "p2": "devin",
-      "score1": null,
-      "score2": null
+      "score1": 12,
+      "score2": 1
     },
     {
       "id": 6,
       "p1": "colby",
       "p2": "brendon",
-      "score1": null,
-      "score2": null
+      "score1": 12,
+      "score2": 2
     },
     {
       "id": 7,
       "p1": "colby",
       "p2": "chuck",
-      "score1": null,
-      "score2": null
+      "score1": 32,
+      "score2": 1
     },
     {
       "id": 8,
       "p1": "devin",
       "p2": "brendon",
-      "score1": null,
-      "score2": null
+      "score1": 123,
+      "score2": 2
     },
     {
       "id": 9,
       "p1": "devin",
       "p2": "chuck",
-      "score1": null,
-      "score2": null
+      "score1": 2,
+      "score2": 3
     },
     {
       "id": 10,
       "p1": "brendon",
       "p2": "chuck",
-      "score1": null,
-      "score2": null
+      "score1": 2,
+      "score2": 1
     }
   ],
   "knockout": {
