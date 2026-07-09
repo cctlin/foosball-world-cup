@@ -134,13 +134,18 @@ main { max-width: 980px; margin: 0 auto; padding: 40px 20px 100px; }
 }
 
 /* ---------- Standings table ---------- */
+.standings-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius);
+}
 .standings {
   width: 100%;
+  min-width: 560px;
   border-collapse: collapse;
   background: var(--rod-black);
   color: var(--cream);
-  border-radius: var(--radius);
-  overflow: hidden;
 }
 .standings th, .standings td {
   padding: 12px 14px;
